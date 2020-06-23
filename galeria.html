@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta class="name" description="esta es una galeria para los aprendices de la ficha 2059985">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style type="text/css">
+        h1{
+            color: #ffffff
+        }
+        .jlr{
+            font-size: 0;
+        }
+        .jlr .jlr_item{
+            font-size: 1rem;
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 6px;
+        }
+        .jlr img.jlr_img{
+            height: 200px;
+            opacity: 0;
+        } 
+        .jlr img.jlr_loaded {
+                -webkit-transition: opacity 1s ease-in;
+                -moz-transition: opacity 1s ease-in;
+                -o-transition: opacity 1s ease-in;
+                -ms-transition: opacity 1s ease-in;
+                transition: opacity 0.5s ease-in;
+                opacity: 1;
+            }
+    </style>
+
+
+    <title>Galería Lightbox</title>
+</head>
+<body class="container-fluid">
+    <!-- Gallery section -->
+	<section class="blog-section spad">
+		<div class="row">
+	        <div id="jLightroom" class="jlr col-lg-12">
+	            <a href="img/1.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/1.jpg" class="jlr_img"/></a>
+	            <a href="img/2.png" data-lightbox="lb1" class="jlr_item"><img src="img/2.png" class="jlr_img"/></a>
+	            <a href="img/3.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/3.jpg" class="jlr_img"/></a>
+	            <a href="img/4.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/4.jpg" class="jlr_img"/></a>
+	            <a href="img/5.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/5.jpg" class="jlr_img"/></a>
+	            <a href="img/6.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/6.jpg" class="jlr_img"/></a>
+	            <a href="img/7.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/7.jpg" class="jlr_img"/></a>
+	            <a href="img/8.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/8.jpg" class="jlr_img"/></a>
+	            <a href="img/9.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/9.jpg" class="jlr_img"/></a>
+	            <a href="img/10.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/10.jpg" class="jlr_img"/></a>
+	            <a href="img/11.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/11.jpg" class="jlr_img"/></a>
+	            <a href="img/12.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/12.jpg" class="jlr_img"/></a>
+	            <a href="img/13.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/13.jpg" class="jlr_img"/></a>
+	            <a href="img/14.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/14.jpg" class="jlr_img"/></a>
+	            <a href="img/15.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/15.jpg" class="jlr_img"/></a>
+	            <a href="img/16.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/16.jpg" class="jlr_img"/></a>
+	            <a href="img/17.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/17.jpg" class="jlr_img"/></a>
+	            <a href="img/18.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/18.jpg" class="jlr_img"/></a>
+	            <a href="img/19.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/19.jpg" class="jlr_img"/></a>
+	            <a href="img/20.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/20.jpg" class="jlr_img"/></a>
+	            <a href="img/21.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/21.jpg" class="jlr_img"/></a>
+	            <a href="img/22.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/22.jpg" class="jlr_img"/></a>
+	            <a href="img/23.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/23.jpg" class="jlr_img"/></a>
+	            <a href="img/24.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/24.jpg" class="jlr_img"/></a>
+	            <a href="img/25.jpg" data-lightbox="lb1" class="jlr_item"><img src="img/25.jpg" class="jlr_img"/></a>
+	        </div>
+	    </div>
+    </section>
+    
+    <!-- Footer section end -->
+	<script src="js/jquery.min.js"></script> 
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/jquery.lightroom.js"></script>
+    
+    <script type="text/javascript">
+        $("#jLightroom").lightroom({
+            image_container_selector: ".jlr_item",
+            img_selector: "img.jlr_img",
+            img_class_loaded: "jlr_loaded",
+            img_space: 5,
+            img_mode: 'min',
+            init_callback: function(elem){$(elem).removeClass("gray_out")}
+        }).init();
+    </script>												
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.slicknav.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>    
+</body>
+</html>
