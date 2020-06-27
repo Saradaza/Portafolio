@@ -108,28 +108,21 @@
 #enviar{
     background-color: #88F2A1;
 }
-
-h2{
-    font-family: 'Amatic SC', cursive;
-    font-size: 85px;
-}
-h5{
-    font-family: 'Dancing Script', cursive;
-    font-size: 30px;
-}
-p{
-    font-family: 'Great Vibes', cursive;
-    font-size: 30px;
-}
-h6{
-    font-family: 'Dancing Script', cursive;
-    font-size: 20px; 
-    color: black;
-}
-h1{
-    font-family: 'Amatic SC', cursive;
-    font-size: 85px;   
-}      
 #podcast{
     background-color: brown;
 }
+@font-face{
+    font-family: parrafo;
+src: url(georgia);
+}
+p{
+    font-family: parrafo;
+}
+@font-face{
+    font-family: titulos;
+src: url(Friendly Schoolmates Regular)
+}
+h2{
+    font-family: titulos;
+}
+       
